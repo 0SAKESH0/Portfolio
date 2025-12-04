@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "LawKnot",
+      "description": "An AI-powered legal assistance web app built using the MERN stack and a Flask-hosted DeepSeek model. It provides document analysis, legal Q&A, and case research with secure data handling.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Flask", "DeepSeek AI"],
+      "category": "web",
+      "image": "./assets/projects/lawknot.png",
+      "githubUrl": "https://github.com/0SAKESH0",
+      "liveUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Game Info",
+      "description": "A MERN stack-based web application that provides detailed video game descriptions, including genre, release date, and developer. Features dynamic search, user authentication, and a responsive UI with MongoDB for efficient data storage.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "category": "web",
+      "image": "./assets/projects/githubstats.png",
+      "githubUrl": "https://github.com/0SAKESH0",
+      "liveUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Learning Platform",
+      "description": "A MEAN stack-based learning platform designed for seamless course enrollment and progress tracking. It includes secure authentication, an intuitive user interface, and structured course management, with data persistence handled through MongoDB.",
+      "technologies": ["Angular", "Node.js", "MongoDB", "Express"],
+      "category": "education",
+      "image": "./assets/projects/scriptable.png",
+      "githubUrl": "https://github.com/0SAKESH0",
+      "liveUrl": "#",
+      "featured": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All",
+      "icon": "fa-solid fa-diagram-project",
+      "visible": true
+    },
+    {
+      "id": "web",
+      "name": "Web Development",
+      "icon": "fa-solid fa-globe",
+      "visible": true
+    },
+    {
+      "id": "education",
+      "name": "Educational",
+      "icon": "fa-solid fa-graduation-cap",
+      "visible": true
+    }
+  ]
+}
