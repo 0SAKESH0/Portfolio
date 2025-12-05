@@ -29,7 +29,7 @@
         "Express"
       ],
       "category": "web",
-      "image": "./assets/projects/githubstats.png",
+      "image": "./assets/projects/game.png",
       "githubUrl": "https://github.com/0SAKESH0/GameInfo",
       "liveUrl": "#",
       "featured": true
@@ -45,7 +45,7 @@
         "Express"
       ],
       "category": "education",
-      "image": "./assets/projects/scriptable.png",
+      "image": "./assets/projects/learning.png",
       "githubUrl": "https://github.com/0SAKESH0/Learning-Platform",
       "liveUrl": "#",
       "featured": true
