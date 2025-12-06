@@ -105,7 +105,7 @@ This repository features responsive web design with mobile-first approach, inter
 <a href="https://sakesh-portfolio.netlify.app/#contact" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Contact%20Form-FA8072?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Contact Form Demo"></a>
 
-<a href="./assets/sakesh-resume.pdf" target="_blank">
+<a href="./assets/SAKESH-resume.pdf" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Resume%20Download-ECEFF4?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Resume Download"></a>
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/rushhiii/Website-Portfolio" target="_blank">
@@ -409,7 +409,7 @@ Website-Portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rushhiii/Website-Portfolio.git
+   git clone https://github.com/0SAKESH0/Portfolio.git
    cd Website-Portfolio
    ```
 
@@ -511,10 +511,10 @@ Update `projects.json` with your project data:
 ## Contact
 
 📧 Email: sakesh2911@gmail.com  
-💼 LinkedIn: [in/rushhiii](https://linkedin.com/in/rushhiii)  
-🐙 GitHub: [@rushhiii](https://github.com/rushhiii)  
+💼 LinkedIn: [in/Sakesh-R](https://linkedin.com/in/Sakesh-R)  
+🐙 GitHub: [@SAKESH0](https://github.com/SAKESH0)  
 🌐 Portfolio: [sakesh-portfolio.netlify.app](https://sakesh-portfolio.netlify.app/)
 
 #
 
-<p align="center"> by <strong>@rushhiii</strong></p>
+<p align="center"> by <strong>0SAKESH0</strong></p>

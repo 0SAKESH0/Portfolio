@@ -13,14 +13,8 @@
     ],
     "socialLinks": [
         {
-            "platform": "Discord",
-            "url": "https://discord.com/users/757054095985999923",
-            "icon": "discord",
-            "tooltip": "Discord"
-        },
-        {
             "platform": "LinkedIn",
-            "url": "https://linkedin.com/in/sakesh-r-798724280",
+            "url": "https://linkedin.com/in/Sakesh-R",
             "icon": "linkedin",
             "tooltip": "LinkedIn"
         },
@@ -35,12 +29,6 @@
             "url": "mailto:sakesh2911@gmail.com",
             "icon": "email",
             "tooltip": "Email"
-        },
-        {
-            "platform": "linktree",
-            "url": "https://linktr.ee/sakesh_r",
-            "icon": "linktree",
-            "tooltip": "Linktree"
         }
     ],
     "footer": {

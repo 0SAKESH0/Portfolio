@@ -455,14 +455,6 @@
                     <div id="socialLinksContainer" class="flex justify-center mb-6 flex-wrap">
                         <!-- Social links will be populated dynamically -->
                     </div>
-
-                    <!-- Test Button -->
-                    <div class="mb-8 flex justify-center">
-                        <button id="testButton" class="nav-btn" title="Test button"> 
-                            <i class="fas fa-check-circle"></i>
-                            <span>Test</span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -891,18 +883,6 @@
                 { transform: 'scale(4)', opacity: 0 }
             ], { duration: 600, easing: 'ease-out' }).onfinish = () => ripple.remove();
         }
-
-        // Wire test button
-        document.addEventListener('DOMContentLoaded', () => {
-            const testBtn = document.getElementById('testButton');
-            if (testBtn) {
-                testBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    showToast('This works — test button clicked', 2500);
-                    triggerCardRipple();
-                });
-            }
-        });
 
         window.cardAPI = {
             updateConfig: (newConfig) => {

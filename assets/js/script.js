@@ -592,8 +592,8 @@ class PortfolioApp {
                     const target = entry.target;
                     const finalValue = target.textContent;
 
-                    // Animate only numeric values
-                    if (!isNaN(parseInt(finalValue))) {
+                    // Animate only numeric values that don't have a + sign
+                    if (!isNaN(parseInt(finalValue)) && !finalValue.includes('+')) {
                         this.animateCounter(target, parseInt(finalValue));
                     }
 
