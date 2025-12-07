@@ -10,7 +10,7 @@ A modern, responsive portfolio website showcasing my journey as a Computer Scien
 
 <a href="https://github.com/0SAKESH0/portfolio" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/0SAKESH0/portfolio/build.yml?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Actions Status"></a>
 <a href="https://portfolio-sakesh.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Portfolio_Website-4285F4?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Portfolio"></a>
-<a href="https://github.com/rushhiii/bashfolio" target="_blank"><img src="https://img.shields.io/badge/Terminal_Portfolio-Bash_Style-2E3440?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"></a>
+
 
 
 <div>
