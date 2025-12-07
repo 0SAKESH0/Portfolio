@@ -9,7 +9,7 @@ A modern, responsive portfolio website showcasing my journey as a Computer Scien
 </h4>
 
 <a href="https://github.com/0SAKESH0/portfolio" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/0SAKESH0/portfolio/build.yml?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Actions Status"></a>
-<a href="https://sakesh-portfolio.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Portfolio_Website-4285F4?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Portfolio"></a>
+<a href="https://portfolio-sakesh.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Portfolio_Website-4285F4?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Portfolio"></a>
 <a href="https://github.com/rushhiii/bashfolio" target="_blank"><img src="https://img.shields.io/badge/Terminal_Portfolio-Bash_Style-2E3440?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"></a>
 
 
@@ -93,16 +93,16 @@ This repository features responsive web design with mobile-first approach, inter
   - Responsive design with smooth scroll navigation
     #### 🎯 Portfolio Section Demos
 
-<a href="https://sakesh-portfolio.netlify.app/#home" target="_blank">
+<a href="https://portfolio-sakesh.netlify.app/#home" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Hero%20Section-1E90FF?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Hero Section Demo"></a>
 
-<a href="https://sakesh-portfolio.netlify.app/#about" target="_blank">
+<a href="https://portfolio-sakesh.netlify.app/#about" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-About%20Section-3B4252?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="About Section Demo"></a>
 
-<a href="https://sakesh-portfolio.netlify.app/#projects" target="_blank">
+<a href="https://portfolio-sakesh.netlify.app/#projects" target="_blank">
   <img src="https://img.shields.io/badge/Github-Projects%20Gallery-7B68EE?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Projects Gallery Demo"></a>
 
-<a href="https://sakesh-portfolio.netlify.app/#contact" target="_blank">
+<a href="https://portfolio-sakesh.netlify.app/#contact" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Contact%20Form-FA8072?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Contact Form Demo"></a>
 
 <a href="./assets/SAKESH-resume.pdf" target="_blank">
@@ -173,7 +173,7 @@ This repository features responsive web design with mobile-first approach, inter
   - Vanilla JavaScript for performance optimization
   - Font Awesome icons and Google Fonts integration
 
-[![Preview](./assets/ele/preview.png)](https://sakesh-portfolio.netlify.app)
+[![Preview](./assets/ele/preview.png)](https://portfolio-sakesh.netlify.app)
 <p>
  This portfolio project is a modern web showcase built with HTML5, CSS3, and vanilla JavaScript. The website features responsive design, smooth animations, and interactive components that demonstrate professional web development skills. Perfect for developers, students, and professionals looking to create an impressive online presence.
  <br>
@@ -181,7 +181,7 @@ This repository features responsive web design with mobile-first approach, inter
 ⚠️ <b>Note:</b> The contact form requires Netlify hosting for full functionality, or you can configure it with other form handling services.
 </p>
 
-<a href="https://sakesh-portfolio.netlify.app/" target="_blank">
+<a href="https://portfolio-sakesh.netlify.app/" target="_blank">
   <img src="https://img.shields.io/badge/Netlify-Live%20Portfolio-5E81AC?style=for-the-badge&logo=netlify&logoColor=white&labelColor=2E3440" alt="Live Portfolio Badge">
 </a>
 
@@ -513,7 +513,7 @@ Update `projects.json` with your project data:
 📧 Email: sakesh2911@gmail.com  
 💼 LinkedIn: [in/Sakesh-R](https://linkedin.com/in/Sakesh-R)  
 🐙 GitHub: [@SAKESH0](https://github.com/SAKESH0)  
-🌐 Portfolio: [sakesh-portfolio.netlify.app](https://sakesh-portfolio.netlify.app/)
+🌐 Portfolio: [portfolio-sakesh.netlify.app](https://portfolio-sakesh.netlify.app/)
 
 #
 
