@@ -475,25 +475,18 @@
                     </div>
                 </div>
 
-                <form class="contact-form scroll-reveal-right scroll-stagger-2 glow-border" id="contactForm"
-                    name="portfolio-contact" method="POST" data-netlify="true" action="/thank-you"
-                    netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="portfolio-contact">
-                    <!-- Honeypot field for spam protection -->
-                    <div style="display: none;">
-                        <input name="bot-field">
-                    </div>
+                <form class="contact-form scroll-reveal-right scroll-stagger-2 glow-border" id="contactForm">
                     <div class="form-group scroll-reveal scroll-stagger-3">
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group scroll-reveal scroll-stagger-4">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group scroll-reveal scroll-stagger-5">
-                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group scroll-reveal scroll-stagger-6">
-                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary scroll-reveal-scale scroll-stagger-6">
                         <span>Send Message</span>
@@ -557,6 +550,7 @@
         </div>
     </div>
     <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
         // Nexus Card modal behaviour

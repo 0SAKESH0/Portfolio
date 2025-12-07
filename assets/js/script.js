@@ -109,7 +109,7 @@ class PortfolioApp {
         this.renderProjects();
 
         // Initialize EmailJS
-        this.initializeEmailJS();
+        // this.initializeEmailJS();
     }
 
     setupEventListeners() {
@@ -231,7 +231,7 @@ class PortfolioApp {
     applyTheme() {
         const themeToggle = document.getElementById('themeToggle');
         const profileImage = document.querySelector('.profile-image');
-        
+
         if (this.isDarkTheme) {
             document.documentElement.removeAttribute('data-theme');
             if (themeToggle) {
@@ -251,7 +251,7 @@ class PortfolioApp {
                 this.switchProfileImage(profileImage, './assets/ele/profile2.jpg', 'Sakesh - Developer Illustration (Light Theme)', 'none');
             }
         }
-        
+
         // Store theme preference
         localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light');
     }
@@ -259,7 +259,7 @@ class PortfolioApp {
     switchProfileImage(imageElement, newSrc, newAlt, filterStyle = 'none') {
         // Create a smooth cross-fade effect
         imageElement.style.opacity = '0.3';
-        
+
         // Pre-load the new image to ensure smooth transition
         const newImage = new Image();
         newImage.onload = () => {
@@ -267,13 +267,13 @@ class PortfolioApp {
             imageElement.src = newSrc;
             imageElement.alt = newAlt;
             imageElement.style.filter = filterStyle;
-            
+
             // Fade back in
             setTimeout(() => {
                 imageElement.style.opacity = '1';
             }, 150);
         };
-        
+
         newImage.onerror = () => {
             // Fallback: if image fails to load, just fade back to original
             console.warn(`Failed to load profile image: ${newSrc}`);
@@ -281,7 +281,7 @@ class PortfolioApp {
                 imageElement.style.opacity = '1';
             }, 150);
         };
-        
+
         // Start loading the new image
         newImage.src = newSrc;
     }
@@ -1040,50 +1040,47 @@ class PortfolioApp {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Prepare form data for Netlify
-        const formData = new FormData(e.target);
-        const data = new URLSearchParams();
+        try {
+            // Check if EmailJS is loaded
+            if (typeof emailjs === 'undefined') {
+                throw new Error('EmailJS SDK not loaded. Check your internet connection or ad blocker.');
+            }
 
-        // Add form-name for Netlify
-        data.append('form-name', 'portfolio-contact');
+            // Initialize EmailJS
+            emailjs.init('DSkfFzsmeAVhZYcgf');
 
-        // Add all form fields
-        for (const [key, value] of formData.entries()) {
-            data.append(key, value);
-        }
-
-        // Submit to Netlify
-        fetch('/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: data.toString()
-        })
-            .then(response => {
-                if (response.ok) {
+            // Send email using EmailJS
+            emailjs.sendForm('R.SAKESH_', 'template_qqncp32', e.target)
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
                     this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
                     e.target.reset();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            })
-            .catch((error) => {
-                console.error('Form submission failed:', error);
-                this.showNotification('❌ Failed to send message. Please try emailing me directly at rushiofficial1205@gmail.com', 'error');
-            })
-            .finally(() => {
-                // Restore button state
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            });
+                })
+                .catch((error) => {
+                    console.error('FAILED...', error);
+                    let params = {
+                        from_name: document.getElementById('user_name').value,
+                        to_name: "Sakesh",
+                        message: document.getElementById('message').value
+                    };
+                    console.error('Template Params attempting to send:', params);
+                    this.showNotification('❌ Failed to send message. Please try emailing me directly at sakesh2911@gmail.com', 'error');
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            this.showNotification(`❌ Error: ${error.message}`, 'error');
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
     }
 
-    // Remove EmailJS initialization since we're using Netlify forms
-    initializeEmailJS() {
-        // No longer needed with Netlify forms
-        console.log('Using Netlify forms for contact form submission');
-    }
+
 
     showNotification(message, type = 'info') {
         // Remove old notifications first to prevent stacking issues
@@ -1254,7 +1251,7 @@ class PortfolioApp {
             // Remove any existing event listeners to prevent conflicts
             const newCard = card.cloneNode(true);
             card.parentNode.replaceChild(newCard, card);
-            
+
             // Add event listeners to the new card
             newCard.addEventListener('mouseenter', () => {
                 newCard.style.transition = 'transform all 400ms ease-in-out';
