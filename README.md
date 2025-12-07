@@ -1,4 +1,4 @@
-[![Banner](https://github.com/rushhiii/portfolio/blob/main/assets/ele/repo_banner.png?raw=true)](https://github.com/rushhiii/portfolio)
+[![Banner](https://github.com/0SAKESH0/portfolio/blob/main/assets/ele/repo_banner.png?raw=true)](https://github.com/0SAKESH0/portfolio)
 
 <h1>★ Modern Portfolio Website</h1>
 
@@ -105,7 +105,7 @@ This repository features responsive web design with mobile-first approach, inter
 <a href="https://portfolio-sakesh.netlify.app/#contact" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Contact%20Form-FA8072?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Contact Form Demo"></a>
 
-<a href="./assets/SAKESH-resume.pdf" target="_blank">
+<a href="https://drive.google.com/file/d/11nw9LoaZGICh-Yj3DHkN8kHSOGe1mMBB/view?usp=sharing" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Resume%20Download-ECEFF4?style=for-the-badge&logo=github&logoColor=ECEFF4&labelColor=3B4252" alt="Resume Download"></a>
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/rushhiii/Website-Portfolio" target="_blank">
@@ -126,16 +126,16 @@ This repository features responsive web design with mobile-first approach, inter
   - Dark/light theme toggle with persistent preferences
     #### 🎨 Design & Animation Features
     
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-CSS%20Animations-4169E1?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="CSS Animations"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Theme%20Toggle-F0E68C?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Theme Toggle"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Responsive%20Design-FFC72C?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Responsive Design"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/js/script.js" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/js/script.js" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Interactive%20JS-3B4252?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Interactive JavaScript"></a>
 <div>
   <p>
@@ -149,16 +149,16 @@ This repository features responsive web design with mobile-first approach, inter
   - Dark/light theme toggle with persistent preferences
     #### 🎨 Design & Animation Features
     
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-CSS%20Animations-4169E1?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="CSS Animations"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Theme%20Toggle-F0E68C?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Theme Toggle"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/css/style.css" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/css/style.css" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Responsive%20Design-FFC72C?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Responsive Design"></a>
 
-<a href="https://github.com/rushhiii/Website-Portfolio/blob/main/js/script.js" target="_blank">
+<a href="https://github.com/0SAKESH0/Website-Portfolio/blob/main/js/script.js" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Interactive%20JS-3B4252?style=for-the-badge&logo=github&logoColor=white&labelColor=2E3440" alt="Interactive JavaScript"></a>
     
 <div>
