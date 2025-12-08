@@ -308,11 +308,9 @@ class PortfolioApp {
 
         const roles = [
             'Full Stack Developer',
-            // 'Computer Science Student',
-            'AI Enthusiast',
-            'Problem Solver',
-            'Creative Thinker',
-            'Tech Explorer'
+            // 'IT Student',
+            'Web Developer'
+    
         ];
 
         let currentRole = 0;

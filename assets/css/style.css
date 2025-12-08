@@ -971,7 +971,7 @@ body.loading .footer {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: var(--space-xl);
+    gap: var(--space-md);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1015,7 +1015,7 @@ body.loading .footer {
     font-weight: 500;
     transition: all var(--transition-fast);
     position: relative;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) var(--space-sm);
     border-radius: var(--radius-md);
     overflow: hidden;
 }
@@ -1040,9 +1040,10 @@ body.loading .footer {
 }
 
 .nav-link:hover {
-    color: var(--text-primary);
-    background: rgba(99, 102, 241, 0.05);
+    color: var(--primary);
+    background: rgba(99, 102, 241, 0.1);
     transform: translateY(-2px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
 .nav-link::after {
@@ -1055,6 +1056,7 @@ body.loading .footer {
     background: linear-gradient(90deg, var(--primary), var(--primary-light));
     transition: all var(--transition-normal);
     transform: translateX(-50%);
+    display: none;
 }
 
 .nav-link:hover::after,
@@ -1063,15 +1065,16 @@ body.loading .footer {
 }
 
 .nav-link.active {
-    color: var(--primary);
-    background: rgba(99, 102, 241, 0.1);
+    color: white;
     font-weight: 600;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
 .nav-link.active::before {
-    opacity: 1;
-    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
-    animation: active-shimmer 2s ease-in-out infinite;
+    opacity: 0;
 }
 
 @keyframes active-shimmer {
@@ -2708,6 +2711,374 @@ p.project-description {
 .projects-cta p {
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
+}
+
+/* Internship Section */
+.internship {
+    padding: var(--space-3xl) 0;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.internship::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-3xl);
+    position: relative;
+    z-index: 1;
+}
+
+.internship-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: var(--glass-border) 1px solid;
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.internship-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-light), var(--primary), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.internship-card:hover {
+    border-color: rgba(139, 92, 246, 0.3);
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+}
+
+.internship-card:hover::before {
+    opacity: 1;
+}
+
+.internship-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: var(--space-lg);
+    transition: all 0.3s ease;
+}
+
+.internship-card:hover .internship-icon {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.internship-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.internship-card .company-name {
+    color: var(--primary-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+}
+
+.internship-card .duration {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-md);
+}
+
+.internship-card .description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: var(--space-lg);
+}
+
+.internship-card .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+/* Achievements Section */
+.achievements {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-3xl);
+    position: relative;
+    z-index: 1;
+}
+
+.achievement-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: var(--glass-border) 1px solid;
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.achievement-card:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    background: rgba(99, 102, 241, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.achievement-card:hover::before {
+    opacity: 1;
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: var(--space-lg);
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.achievement-icon.award-icon,
+.achievement-icon.certificate-icon,
+.achievement-icon.achievement-icon-3,
+.achievement-icon.achievement-icon-4 {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+}
+
+.achievement-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.achievement-card .organization {
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+}
+
+.achievement-card .date {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-md);
+}
+
+.achievement-card .description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Certificates Section */
+.certificates {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.certificates::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-3xl);
+    position: relative;
+    z-index: 1;
+}
+
+.certificate-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: var(--glass-border) 1px solid;
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-card:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    background: rgba(99, 102, 241, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.certificate-card:hover::before {
+    opacity: 1;
+}
+
+.certificate-header {
+    display: flex;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    align-items: flex-start;
+}
+
+.certificate-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: white;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.certificate-card:hover .certificate-icon {
+    transform: rotate(12deg) scale(1.1);
+}
+
+.certificate-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.certificate-info .issuer {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.certificate-card .issue-date {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-md);
+}
+
+.certificate-card .description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: var(--space-lg);
+}
+
+.view-certificate {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.view-certificate:hover {
+    color: #10b981;
+    gap: var(--space-sm);
 }
 
 /* Contact Section */
