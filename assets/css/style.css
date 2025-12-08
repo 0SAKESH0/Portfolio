@@ -1455,10 +1455,11 @@ body.loading .hero-image {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
     min-height: 2em;
+    font-weight: 500;
     animation: slideUp .5s ease-out;
 }
 
@@ -1483,8 +1484,9 @@ body.loading .hero-image {
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-2xl);
-    max-width: 500px;
+    max-width: 520px;
     animation: slideUp .5s ease-out;
+    line-height: 1.7;
     /* animation-delay: .5s; */
 }
 
@@ -1933,8 +1935,9 @@ body.loading .hero-image {
 
 .card-content p {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: var(--space-lg);
+    font-size: 1.05rem;
 }
 
 .card-icon {
