@@ -22,7 +22,7 @@
       "GitHub"
     ],
     "github": "https://github.com/0SAKESH0/Digital-Disaster-Modeling",
-    "live": "",
+    "liveUrl": "#",
     "image": "./assets/projects/digital-disaster-model.png"
   },
     {
@@ -89,7 +89,7 @@
       "CSS"
   ],
   "github": "https://github.com/0SAKESH0/LapZone",
-  "live": "",
+  "liveUrl": "#",
   "image": "./assets/projects/lapzone.png"
 }
   ],
