@@ -1045,7 +1045,9 @@ class PortfolioApp {
             }
 
             // Initialize EmailJS
-            emailjs.init('DSkfFzsmeAVhZYcgf');
+            emailjs.init({
+                publicKey: 'DSkfFzsmeAVhZYcgf',
+            });
 
             // Send email using EmailJS
             emailjs.sendForm('R.SAKESH_', 'template_qqncp32', e.target)
