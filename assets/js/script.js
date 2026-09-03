@@ -108,6 +108,8 @@ class PortfolioApp {
         this.renderFilterButtons();
         this.renderProjects();
 
+        this.loadLeetCodeStats();
+
         // Initialize EmailJS
         // this.initializeEmailJS();
     }
@@ -797,6 +799,51 @@ class PortfolioApp {
 
         };
     }
+
+    async loadLeetCodeStats() {
+    try {
+        const username = "SAKESH007";
+
+        const response = await fetch(
+            `https://alfa-leetcode-api.onrender.com/${username}/solved`
+        );
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch LeetCode data");
+        }
+
+        const data = await response.json();
+
+        console.log("LeetCode Data:", data);
+
+        document.getElementById("leetcode-total").textContent =
+            data.solvedProblem;
+
+        document.getElementById("leetcode-easy").textContent =
+            data.easySolved;
+
+        document.getElementById("leetcode-medium").textContent =
+            data.mediumSolved;
+
+        document.getElementById("leetcode-hard").textContent =
+            data.hardSolved;
+
+        const loading = document.getElementById("leetcode-loading");
+
+        if (loading) {
+            loading.style.display = "none";
+        }
+
+    } catch (error) {
+        console.error("LeetCode API Error:", error);
+
+        const loading = document.getElementById("leetcode-loading");
+
+        if (loading) {
+            loading.textContent = "Unable to load LeetCode stats.";
+        }
+    }
+}
 
     async loadProjects() {
         try {
@@ -1577,6 +1624,8 @@ class EnhancedFeatures {
             document.body.classList.remove('keyboard-navigation');
         });
     }
+
+    
 
     initAccessibility() {
         // Add skip to content link
