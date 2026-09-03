@@ -517,4 +517,4 @@ Update `projects.json` with your project data:
 
 #
 
-<p align="center"> by <strong>0SAKESH0</strong></p>
+<p align="center"> by <strong>SAKESH</strong></p>
