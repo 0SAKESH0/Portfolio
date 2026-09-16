@@ -800,8 +800,16 @@ class PortfolioApp {
         };
     }
 
-    async loadLeetCodeStats() {
+async loadLeetCodeStats() {
+
+    const loading = document.getElementById("leetcode-loading");
+
     try {
+
+        // ==========================================
+        // 1. TRY LEETCODE API FIRST
+        // ==========================================
+
         const username = "SAKESH007";
 
         const response = await fetch(
@@ -809,39 +817,110 @@ class PortfolioApp {
         );
 
         if (!response.ok) {
-            throw new Error("Failed to fetch LeetCode data");
+            throw new Error(`API Error: ${response.status}`);
         }
 
         const data = await response.json();
 
-        console.log("LeetCode Data:", data);
+        console.log("LeetCode API Data:", data);
 
-        document.getElementById("leetcode-total").textContent =
-            data.solvedProblem;
+        // Update stats from API
+        this.updateLeetCodeStats({
+            solved: data.solvedProblem,
+            easy: data.easySolved,
+            medium: data.mediumSolved,
+            hard: data.hardSolved
+        });
 
-        document.getElementById("leetcode-easy").textContent =
-            data.easySolved;
-
-        document.getElementById("leetcode-medium").textContent =
-            data.mediumSolved;
-
-        document.getElementById("leetcode-hard").textContent =
-            data.hardSolved;
-
-        const loading = document.getElementById("leetcode-loading");
-
+        // Hide loading
         if (loading) {
             loading.style.display = "none";
         }
 
-    } catch (error) {
-        console.error("LeetCode API Error:", error);
+        console.log("✅ LeetCode stats loaded from API");
 
-        const loading = document.getElementById("leetcode-loading");
+    } catch (apiError) {
 
-        if (loading) {
-            loading.textContent = "Unable to load LeetCode stats.";
+        // ==========================================
+        // 2. API FAILED → LOAD JSON BACKUP
+        // ==========================================
+
+        console.warn(
+            "⚠️ LeetCode API failed. Loading backup JSON...",
+            apiError
+        );
+
+        try {
+
+            const backupResponse = await fetch(
+                './assets/config/leetcode-stats.json'
+            );
+
+            if (!backupResponse.ok) {
+                throw new Error(
+                    `Backup JSON Error: ${backupResponse.status}`
+                );
+            }
+
+            const backupData = await backupResponse.json();
+
+            console.log("LeetCode Backup Data:", backupData);
+
+            // Update stats from JSON
+            this.updateLeetCodeStats(backupData);
+
+            // Hide loading
+            if (loading) {
+                loading.style.display = "none";
+            }
+
+            console.log("✅ LeetCode stats loaded from backup JSON");
+
+        } catch (backupError) {
+
+            // ==========================================
+            // 3. BOTH API AND JSON FAILED
+            // ==========================================
+
+            console.error(
+                "❌ Both LeetCode API and backup JSON failed.",
+                backupError
+            );
+
+            if (loading) {
+                loading.textContent =
+                    "Unable to load LeetCode stats.";
+            }
         }
+    }
+}
+
+
+// ==========================================
+// UPDATE LEETCODE STATS ON PAGE
+// ==========================================
+
+updateLeetCodeStats(data) {
+
+    const total = document.getElementById("leetcode-total");
+    const easy = document.getElementById("leetcode-easy");
+    const medium = document.getElementById("leetcode-medium");
+    const hard = document.getElementById("leetcode-hard");
+
+    if (total) {
+        total.textContent = data.solved;
+    }
+
+    if (easy) {
+        easy.textContent = data.easy;
+    }
+
+    if (medium) {
+        medium.textContent = data.medium;
+    }
+
+    if (hard) {
+        hard.textContent = data.hard;
     }
 }
 

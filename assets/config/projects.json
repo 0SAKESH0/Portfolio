@@ -1,30 +1,23 @@
 {
   "projects": [
+
     {
-      "id":1,
-    "title": "Digital Disaster Model",
-    "description": "A full-stack disaster management platform combining computer vision, 3D modeling, machine learning, and reinforcement learning to analyze disaster scenarios and provide interactive digital visualization.",
-    "category": "AI",
+    "id":1,
+    "title": "LapZone",
+    "description": "A full-stack laptop e-commerce web application built with the MERN stack. Users can browse laptops, view product details, search and filter products, and explore customer reviews through a responsive and modern interface.",
+    "category": "MERN",
     "technologies": [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "Python",
-      "OpenCV",
-      "Blender",
-      "Blender Python API",
-      "CNN",  
-      "Random Forest",
-      "Q-Learning",
-      "MongoDB",
-      "REST API",
-      "Git",
-      "GitHub"
-    ],
-    "github": "https://github.com/0SAKESH0/Digital-Disaster-Modeling",
-    "liveUrl": "#",
-    "image": "./assets/projects/digital-disaster-model.png"
-  },
+  "React.js",
+  "Java",
+  "Spring Boot",
+  "MySQL",
+  "JavaScript",
+  "CSS"
+],
+  "github": "https://github.com/0SAKESH0/LapZone",
+  "liveUrl": "https://lap-zone-gilt.vercel.app",
+  "image": "./assets/projects/lapzone.png"
+},
     {
       "id": 2,
       "title": "LawKnot",
@@ -75,23 +68,31 @@
       "liveUrl": "#",
       "featured": true
     },
-    {
-    "id":5,
-    "title": "LapZone",
-    "description": "A full-stack laptop e-commerce web application built with the MERN stack. Users can browse laptops, view product details, search and filter products, and explore customer reviews through a responsive and modern interface.",
-    "category": "MERN",
+ {
+      "id":5,
+    "title": "Digital Disaster Model",
+    "description": "A full-stack disaster management platform combining computer vision, 3D modeling, machine learning, and reinforcement learning to analyze disaster scenarios and provide interactive digital visualization.",
+    "category": "AI",
     "technologies": [
       "React.js",
       "Node.js",
       "Express.js",
+      "Python",
+      "OpenCV",
+      "Blender",
+      "Blender Python API",
+      "CNN",  
+      "Random Forest",
+      "Q-Learning",
       "MongoDB",
-      "JavaScript",
-      "CSS"
-  ],
-  "github": "https://github.com/0SAKESH0/LapZone",
-  "liveUrl": "#",
-  "image": "./assets/projects/lapzone.png"
-}
+      "REST API",
+      "Git",
+      "GitHub"
+    ],
+    "github": "https://github.com/0SAKESH0/Digital-Disaster-Modeling",
+    "liveUrl": "#",
+    "image": "./assets/projects/digital-disaster-model.png"
+  }
   ],
   "categories": [
     {
